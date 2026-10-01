@@ -106,7 +106,12 @@ export class Game {
 
         // Example to add a div on the game area
         this.bga.gameArea.getElement().insertAdjacentHTML('beforeend', `
-            <div id="player-tables"></div>
+            <div id="myhand_wrap" class="whiteblock">
+<b id="myhand_label">${_("My hand")}</b>
+<div id="myhand">
+<div class="fakecard"></div>
+</div>
+</div>
         `);
         
         // Setting up player boards
